@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvUser"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:strokeColor="@color/colorPrimaryVariant"
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUser"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tint="@color/colorPrimaryVariant"
+                app:srcCompat="@drawable/ic_person" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ivUser"
+                app:layout_constraintStart_toEndOf="@+id/ivUser"
+                app:layout_constraintTop_toTopOf="@+id/ivUser"
+                tools:text="Leanne Graham" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/mtvName"
+                app:layout_constraintTop_toBottomOf="@+id/mtvName"
+                tools:text="Bret" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/mtvUserName"
+                app:layout_constraintTop_toBottomOf="@+id/mtvUserName"
+                tools:text="Sincere@april.biz" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/mtvEmail"
+                app:layout_constraintTop_toBottomOf="@+id/mtvEmail"
+                tools:text="1-770-736-8031 x56442" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvWebSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/mtvPhone"
+                app:layout_constraintTop_toBottomOf="@+id/mtvPhone"
+                tools:text="hildegard.org" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
